@@ -10,6 +10,9 @@ app.use(bodyParser.json());
 
 // Routes
 app.use("/api", aiRoutes);
+app.use("/", (req, res) => {
+  res.send("AI Server is running");
+});
 
 // Start the server
 app.listen(PORT, () => {
