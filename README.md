@@ -15,7 +15,7 @@ A Node.js REST API that integrates with Google's Gemini AI model for text genera
 
 - Node.js 14.x or higher
 - npm or yarn
-- Google AI API key
+- Google AI Studio API key
 
 ## Installation
 
@@ -41,7 +41,7 @@ A Node.js REST API that integrates with Google's Gemini AI model for text genera
 4. Update .env with your configuration:
 
     ```env
-    API_KEY=your_google_ai_api_key
+    API_KEY=your_google_ai_studio_api_key
     PORT=3000
     NODE_ENV=development
     BASE_URL=http://localhost:3000
@@ -83,11 +83,15 @@ Swagger UI documentation is available at: <http://localhost:3000/api-docs>
 
 ## Environment Variables
 
-- API_KEY: Google Generative AI API key
+- API_KEY: Google AI Studio Gemini API key
 - PORT: Server port (default: 3000)
 - NODE_ENV: Environment mode (development/production)
 - BASE_URL: API base URL
 - FRONTEND_URL: Frontend application URL for CORS
+
+## Default Gemini Model
+
+This API uses `gemini-3.5-flash-lite` as the default text-generation model.
 
 ## License
 
